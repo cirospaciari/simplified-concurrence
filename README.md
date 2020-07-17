@@ -3,8 +3,8 @@
 ```javascript
 
 const { Concurrent } = require('simplified-concurrence');
-const type = 'thread';
-const filename = path.join(__dirname, './job.js');
+const type = 'thread'; //thread/fork
+const filename = path.join(__dirname, './job.js'); //task  { execute(data, resolve) }
 const keepAlive = true; //(auto restart if exits)
 
 const concurrent = new Concurrent(type, filename, keepAlive);
