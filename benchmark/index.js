@@ -43,13 +43,15 @@ async function execute(type, format, qty) {
     await concurrent.terminate();
 }
 
-async function executeAll(){
-    await execute('fork', 'parallel', 1000);
-    await execute('fork', 'sync', 1000);
+async function executeAll(qty){
+    console.info(`Running ${qty} example requests:`);
 
-    await execute('thread', 'parallel', 1000);
-    await execute('thread', 'sync', 1000);
+
+    await execute('fork', 'parallel', qty);
+    await execute('fork', 'sync', qty);
+
+    await execute('thread', 'parallel', qty);
+    await execute('thread', 'sync', qty);
 }
-console.info(`Running ${1000} example requests:`);
 
 executeAll(1000);

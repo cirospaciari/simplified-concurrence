@@ -41,6 +41,11 @@ class Concurrent {
     isRunning(){
         return this.worker.isRunning();
     }
+    
+    isRestarting(){
+        return this.restarting;
+    }
+
 
     waitExit(){
         return new Promise((resolve)=> {
@@ -98,6 +103,14 @@ class Concurrent {
         if(!dontWait)
             return;
         return this.waitExit();
+    }
+    async restart(){
+        this.restarting = true;
+        const old_keepAlive = this.worker.keepAlive;
+        await this.terminate();
+        this.worker.keepAlive = old_keepAlive;
+        this.worker.start();
+        this.restarting = false;
     }
 }
 
