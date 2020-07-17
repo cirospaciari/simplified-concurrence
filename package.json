@@ -1,0 +1,27 @@
+{
+  "name": "simplified-concurrence",
+  "version": "1.0.0",
+  "description": "Easy way to create worker threads or forks with two way communication to do heavy tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cirospaciari/simplified-concurrence.git"
+  },
+  "keywords": [
+    "worker",
+    "thread",
+    "worker_threads",
+    "fork",
+    "process",
+    "parallel"
+  ],
+  "author": "ciro.spaciari@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cirospaciari/simplified-concurrence/issues"
+  },
+  "homepage": "https://github.com/cirospaciari/simplified-concurrence#readme"
+}
