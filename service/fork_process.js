@@ -13,6 +13,7 @@ process.on('message', (request) => {
                 process.disconnect();
             }
         });
+        return;
     }
     request_counter++;
 
