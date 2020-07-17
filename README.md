@@ -16,8 +16,8 @@ if(format === 'parallel'){
     await Promise.all(new Array(qty).fill().map(() => concurrent.send({
         url: '/',
         search: '',
-        host: 'www.mysite.mysite',
-        hostname: 'www.betsul.com',
+        host: 'www.mysite.com',
+        hostname: 'www.mysite.com',
         protocol: 'https:',
         origin: 'https://www.mysite.com',
         cookies: {
@@ -37,8 +37,8 @@ if(format === 'parallel'){
         await concurrent.send({
             url: '/',
             search: '',
-            host: 'www.mysite.mysite',
-            hostname: 'www.betsul.com',
+            host: 'www.mysite.com',
+            hostname: 'www.mysite.com',
             protocol: 'https:',
             origin: 'https://www.mysite.com',
             cookies: {
