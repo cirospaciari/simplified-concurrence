@@ -1,3 +1,15 @@
+[![npm package](https://nodei.co/npm/simplified-concurrence.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/simplified-concurrence/)
+
+[![NPM version](https://img.shields.io/npm/v/simplified-concurrence.svg)](https://img.shields.io/npm/v/simplified-concurrence.svg)
+[![NPM License](https://img.shields.io/npm/l/simplified-concurrence.svg)](https://img.shields.io/npm/l/simplified-concurrence.svg)
+[![NPM Downloads](https://img.shields.io/npm/dm/simplified-concurrence.svg?maxAge=43200)](https://img.shields.io/npm/dm/simplified-concurrence.svg?maxAge=43200)
+
+Support me for future versions:
+
+[![BMC](https://cdn.buymeacoffee.com/buttons/default-orange.png)](https://www.buymeacoffee.com/i2yBGw7)
+
+[![PAGSEGURO](https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/209x48-doar-assina.gif)](https://pag.ae/7VxyJphKt)
+
 # simplified-concurrence
 
 ```javascript
