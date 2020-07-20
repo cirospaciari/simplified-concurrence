@@ -1,6 +1,6 @@
 {
   "name": "simplified-concurrence",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Easy way to create worker threads or forks with two way communication to do heavy tasks",
   "main": "index.js",
   "scripts": {
