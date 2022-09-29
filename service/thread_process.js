@@ -6,7 +6,6 @@ const { filename, encoded } = workerData;
 const job = require(filename);
 
 let request_counter = 0;
-let kill_after_ends = false;
 let closed = false;
 
 parentPort.on('message', (request)=>{
@@ -19,8 +18,6 @@ parentPort.on('message', (request)=>{
         return parentPort.close();
     }
 
-    request_counter++;
-
     job.execute(request.data, (result)=> {
         if(encoded){
             result = encoder.encode(JSON.stringify(result));
@@ -28,14 +25,5 @@ parentPort.on('message', (request)=>{
          }
 
          parentPort.postMessage( { id: request.id, data: result });
-
-         request_counter--;
-
-         setImmediate(() => {
-             if (kill_after_ends && request_counter === 0 && !closed) {
-                closed = true; 
-                parentPort.close();
-             }
-         });
     });
 });
